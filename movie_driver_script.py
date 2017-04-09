@@ -2,7 +2,7 @@ import json
 import urllib
 
 import fresh_tomatoes
-import movietemplate
+import movie_template
 
 API_KEY = "insert API_KEY here"
 
@@ -33,8 +33,8 @@ def fetch_video_api(id):
 movie_data = fetch_popular_api()
 movie_list = []
 for movie in movie_data:
-    obj = movietemplate.Movie(movie["title"], "https://image.tmdb.org/t/p/w500/" + movie["poster_path"],
-                              fetch_video_api(str(movie["id"])))  # NOQA
+    obj = movie_template.Movie(movie["title"], "https://image.tmdb.org/t/p/w500/" + movie["poster_path"],
+                               fetch_video_api(str(movie["id"])))  # NOQA
     movie_list.append(obj)
 
 # calling function from fresh_tomatoes script to build and launch website
