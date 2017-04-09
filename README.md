@@ -9,9 +9,11 @@ The project can be simply downloaded as a zip file or cloned into a local reposi
 ## API KEY
 Since the project is fed data from an API endpoint belonging to the [TMDB](https://www.themoviedb.org/?language=en)
 In the _movie_driver_script_ replace
+
 ```API_KEY = "insert API_KEY here```
 
 with an alphanumeric key issued by TMDB. So, it will look something like this
+
 ```API_KEY="18421692af********************"```
 
 ## Usage
